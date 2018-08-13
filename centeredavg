@@ -10,12 +10,11 @@ final average. You may assume that the array is length 3 or more.
 
 def centered_average(nums):
   
-	nums.pop(nums.index(max(nums)))
-  #pops off the largest number
+	nums.pop(nums.index(max(nums)))	 #pops off the largest number
 					 #in the list by finding its 
 					 #location using index() and max()
 	nums.pop(nums.index(min(nums)))
-	 #pops off the smallest number
+	 				 #pops off the smallest number
 					 #in the list by finding its 
 					 #location using index() and max()
 	avg = sum(nums) / len(nums)
