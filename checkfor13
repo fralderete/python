@@ -1,0 +1,18 @@
+
+Return the sum of the numbers in the array, returning 0 for an empty array. 
+Except the number 13 is very unlucky, so it does not count and numbers that 
+come immediately after a 13 also do not count.
+
+def sum13(nums):
+  total = 0     #declare your variables so they can be used in the loop later
+  i = 0
+  while i < len(nums): #run the loop as long as there are nums in the list
+    
+    if nums[i] == 13: #check if the number at the current index is = to 13
+      i += 2          #if the 13 is found skip the 13 and the number after it
+      continue        #continue past the 2 numbers
+    
+    total += nums[i]  #add whatever number isn't 13 to the list 'total'
+    i += 1            #check the next number
+    
+  return total
