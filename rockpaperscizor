@@ -1,0 +1,68 @@
+print("Typing gibberish into the choices will quit the game. Have fun!")
+
+while True:
+
+    ch1 = input("Player 1 please pick Rock, Paper, or Scissors: ")
+    ch2 = input("Player 2 please pick Rock, Paper, or Scissors: ")
+    choice1 = ch1.lower()
+    choice2 = ch2.lower()
+    
+    if choice1 == choice2:
+        print("It's a tie!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over!")
+            break
+    elif choice1 == "rock" and choice2 == "scissors":
+        print("Player 1 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    elif choice1 == "paper" and choice2 == "rock":
+        print("Player 1 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    elif choice1 == "scissors" and choice2 == "paper":
+        print("Player 1 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    elif choice1 == "rock" and choice2 == "paper":
+        print("Player 2 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    elif choice1 == "paper" and choice2 == "scissors":
+        print("Player 2 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    elif choice1 == "scissors" and choice2 == "rock":
+        print("Player 2 wins!")
+        choice = input("Would you like to play again? (Type y or n)")
+        if choice == 'y':
+            continue
+        else:
+            print("Game over! One of you sucks!")
+            break
+    else: 
+        print("Game over! You didn't follow instructions. Can't you read?")
+        break
