@@ -6,8 +6,8 @@ while True:
     choice1 = ch1.lower()
     choice2 = ch2.lower()
     
-    if choice1 == choice2:
-        print("It's a tie!")
+    if choice1 == choice2:          # The first check is for a tie, after that every situation is checked. 
+        print("It's a tie!")        # If anyone types anything but rock paper or scissors it breaks the program. 
         choice = input("Would you like to play again? (Type y or n)")
         if choice == 'y':
             continue
