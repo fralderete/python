@@ -2,7 +2,8 @@
 # Original did not use int() on lines 23 and 59 because it was run on Python 2 not 3
 
 """ must be run on the terminal for the game to work, but it is unplayable due 
-to not being able to use the arrow keys without breaking the program
+to not being able to use the arrow keys without breaking the program on MacOS.
+I believe the guy on the original video was using Linux.
 """
 
 import random
