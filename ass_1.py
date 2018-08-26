@@ -1,5 +1,6 @@
 import random
 
+# Not my code, I only coded part of this and used solutions to understand the rest. All of the comments are mine.
 # print('\n'*100)       # Clear screen
 
 def display_board(board):
